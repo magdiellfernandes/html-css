@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            background-color: rgb(207, 207, 91);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red; /*Cor dos links*/
+            text-decoration: none; /*Tira o sublinhado dos links*/
+        }
+
+        a:visited {
+            color: green; /*cor dos links visitados*/
+            font-weight: bold;
+        }
+        a:hover { /*ao passar o mouse, aparece sublinhado*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: azure;
+        }
+
+        .especial::before {       /*antes do link aparecerá '↣' . na cor amarela.*/
+            content: ' ↣';
+            color: rgb(67, 67, 9);
+        }
+        .especial::after { /*no fim do link aparecerá '↢' . não estará sublinhado, peso da fone normal e na cor amarela.*/
+            content: ' ↢';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(109, 109, 40);
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <h2> Sites de Prefeituras</h2>
+    <ul>
+        <li><a href="https://ipiranga.pi.gov.br/" target="_blank">Prefeitura de Ipiranha</a></li>
+        <li><a href="https://www2.picos.pi.gov.br/" target="_blank" class="especial">Prefeitura de Picos</a></li>
+        <li><a href="https://www.sousa.pb.gov.br/" target="_blank">Prefeitura de Sousa</a></li>
+    </ul>
+        
+        </body>
+    </a>
+</html>
