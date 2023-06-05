@@ -12,34 +12,50 @@
             padding: 30px;
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
         body > h1 {
             display: block;
             padding: 30px;
             text-align: center;
         }
 
-        caption {
-            font-size: 10px;
-        }
-
-        table {
-            width: 500px;
-            border-collapse: collapse;
-        }
-
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
-        td.num {
-            text-align: right;
+
+        caption {
+            font-size: 10px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+          position: sticky;
+          top: 0;  
+          background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightslategray;
+        }
+        
+        td.num {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
